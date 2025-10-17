@@ -1,0 +1,7 @@
+- name: Prueba de conexión con Vagrant
+  hosts: web
+  become: yes
+  tasks:
+    - name: Mostrar mensaje de éxito
+      debug:
+        msg: "Ansible está fuincionando correctamente con Vagrant"
